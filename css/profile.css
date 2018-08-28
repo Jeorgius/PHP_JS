@@ -1,0 +1,122 @@
+profile {
+    display: grid;
+    grid-template-columns: auto 160px;
+    padding: 5px;
+    grid-gap: 5px;
+}
+
+name, surname {
+    display: block;
+}
+#ProfileText {
+    width: 100%;
+    margin-right: 5px;
+}
+#ProfileNickname,
+#ProfileName,
+#ProfileSurname,
+#ProfileEmail {
+    position: relative;
+    display: inline;
+}
+
+#name,
+#surname,
+#text,
+#email {
+    position: relative;
+    display: inline;
+}
+
+#EditForm {
+    position: relative;
+    display: inline;
+}
+rightbar #EditFormPic {
+    position: absolute;
+    z-Index: 50;
+    width: 160px;
+    height: 234px;
+    background: rgba(255, 255, 255, 0.3);
+    right: 0;
+    text-align: center;
+    vertical-align: middle;
+
+}
+.EditInput {
+    border: solid 1px whitesmoke;
+    border-radius: 5px;
+    background: rgba(0,0,0,0);
+    color: whitesmoke;
+    position: relative;
+    display: inline;
+}
+rightbar #ProfilePicFrame {
+    min-height: 234px;
+    width: 160px;
+    display: inline;
+    position: absolute;
+    background: url("http://mysite/icons/userpic.jpg");
+    background-size: 160px auto;
+}
+#ProfilePicURL, img#ProfilePicURL {
+    /*float: right;*/
+    /*max-width: 250px;*/
+    /*max-height: 245px;*/
+    position: absolute;
+    width: 100%;
+    display: inline;
+    text-align: center;
+    vertical-align: center;
+}
+.EditBarPic {
+    position: absolute;
+    z-Index: 100;
+    right: 35px;
+
+}
+.EditBar {
+    position: absolute;
+    z-Index: 100;
+    display: inline;
+    width: 46px;
+    /* left: 0;*/
+}
+#EditFormPic {
+    min-height: 234px;
+}
+
+.ProfileEditButton,
+.ProfileApplyButton,
+.ProfileCancelButton {
+    border: none;
+    outline: none;
+    position: relative;
+}
+.ProfileEditButton {
+    width: 15px;
+    height: 17px;
+    /*float: right;*/
+    /*display: inline;*/
+    display: inline;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background: url(http://jeorgius/icons/edit.png) no-repeat;
+
+}
+.ProfileCancelButton {
+    width: 15px;
+    height: 17px;
+    /*float: right;*/
+    /*margin-left: 15px;*/
+    background: url(http://jeorgius/icons/cancel.png) no-repeat;
+    display: none;
+}
+.ProfileApplyButton {
+    width: 15px;
+    height: 17px;
+    /*margin-left: 30px;*/
+    /*float: right;*/
+    background: url(http://jeorgius/icons/apply.png) no-repeat;
+    display: none;
+}

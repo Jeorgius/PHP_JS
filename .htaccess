@@ -1,0 +1,15 @@
+<IfModule dir_module>
+    DirectoryIndex index.php
+</IfModule>
+
+RemoveHandler .html .htm
+AddType application/x-httpd-php .php .htm .html .phtml .js
+AddHandler x-httpd-php5 .js
+AddHandler x-httpd-php7 .js
+
+<FilesMatch "\.(js|php)$">
+SetHandler application/x-httpd-php
+</FilesMatch>
+
+RewriteEngine on
+ErrorDocument 404 /index.php

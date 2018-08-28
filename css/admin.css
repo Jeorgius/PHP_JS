@@ -1,0 +1,276 @@
+.EditBarPic {
+    position: absolute;
+    z-Index: 100;
+    right: 35px;
+
+}
+.EditBarAdmin {
+    /*position: absolute;
+    z-Index: 100;*/
+    display: block;
+    /*width: 46px;*/
+    /* left: 0;*/
+}
+
+/*.EditBarAdmin.news, .EditBarAdmin.photos,
+.EditBarAdmin.music,.EditBarAdmin.about{
+    position: absolute;
+    z-index: 4;
+    background: black;
+}*/
+/*news .EditBarAdmin{
+    left: 0;
+    bottom: 0;
+}*/
+/*.EditBar.news{
+    left:0;
+    bottom:0;
+}*/
+imageArea {
+    border: 1px dashed blue;
+    margin-left: 5px;
+}
+.EditBar.photos {}
+.EditBar.music{}
+.EditBar.about{
+    left:0;
+}
+/*                  NEWS*/
+.EditBarAdmin.news {
+    display: block;
+}
+.EditFormAdmin_News {
+    position: relative;
+    display: inline;
+}
+rightbar #EditFormPic {
+    position: absolute;
+    z-Index: 50;
+    width: 160px;
+    height: 234px;
+    background: rgba(255, 255, 255, 0.3);
+    right: 0;
+    text-align: center;
+    vertical-align: middle;
+
+}
+.EditInputAdminNewsTitle, .EditInputAdminNewsText {
+    border: solid 1px darkcyan;
+    border-radius: 5px;
+    background: rgba(0,0,0,0);
+    color: black;
+    /*position: relative;*/
+    display: block;
+    width:100%;
+    margin-bottom: 5px;
+}
+.EditInputAdminNewsTitle{
+    height: 1.5em;
+}
+.EditInputAdminNewsText{
+    height: 160px;
+    max-height:300px;
+}
+
+#addNewsButton {
+    width: 40px;
+    height:40px;
+    background-color: #77FF77;
+    border-radius: 50%;
+    color: black;
+    font-size: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+}
+#addNewsButton:hover{
+    background-color: antiquewhite;
+}
+#adminField_News{
+    display: block;
+    height: 40px;
+    text-align: center;
+}
+.NewsEditButton,
+.NewsApplyButton,
+.NewsCancelButton,
+.NewsDeleteButton{
+    border: none;
+    outline: none;
+    position: relative;
+}
+.NewsEditButton {
+    width: 15px;
+    height: 17px;
+    /*float: right;*/
+    /*display: inline;*/
+    display: inline;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background: url(http://jeorgius/icons/edit.png) no-repeat;
+
+}
+.NewsCancelButton {
+    width: 15px;
+    height: 17px;
+    /*float: right;*/
+    /*margin-left: 15px;*/
+    background: url(http://jeorgius/icons/cancel.png) no-repeat;
+    display: none;
+}
+.NewsApplyButton {
+    width: 15px;
+    height: 17px;
+    /*margin-left: 30px;*/
+    /*float: right;*/
+    background: url(http://jeorgius/icons/apply.png) no-repeat;
+    display: none;
+}
+.NewsDeleteButton {
+    right: 10px;
+    height: 17px;
+    color: #FF7777;
+    background: #000;
+    display:none;
+    position: absolute;
+
+}
+
+/*          PHOTOS */
+.EditBarAdmin.photos {
+    position: absolute;
+    /*border: 1px solid white;*/
+    width: 170px;
+}
+photo imageArea {
+    display: block;
+}
+#addPhotoButton {
+    width: 40px;
+    height:40px;
+    background-color: #77FF77;
+    border-radius: 50%;
+    color: black;
+    font-size: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 60px;
+}
+#addPhotoButton:hover{
+    background-color: antiquewhite;
+}
+#adminField_Photos{
+    display: block;
+    height: 170px;
+    width: 170px;
+    text-align: center;
+
+}
+.PhotosEditButton,
+.PhotosApplyButton,
+.PhotosCancelButton,
+.PhotosDeleteButton{
+    border: none;
+    outline: none;
+    position: relative;
+}
+.PhotosEditButton {
+    width: 15px;
+    height: 17px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background: url(http://jeorgius/icons/edit.png) no-repeat;
+
+}
+.PhotosCancelButton {
+    width: 15px;
+    height: 17px;
+    background: url(http://jeorgius/icons/cancel.png) no-repeat;
+    display: none;
+}
+.PhotosApplyButton {
+    width: 15px;
+    height: 17px;
+    background: url(http://jeorgius/icons/apply.png) no-repeat;
+    display: none;
+}
+.PhotosDeleteButton {
+    right: 0;
+    height: 17px;
+    color: #FF7777;
+    background: #000;
+    display:none;
+    position: absolute;
+
+}
+
+/*          STORE */
+
+.EditBarAdmin.store {
+    top: 0;
+    left: 0;
+    position: absolute;
+    /*border: 1px solid white;*/
+    width: 170px;
+}
+#addProductButton {
+    width: 40px;
+    height:40px;
+    background-color: #77FF77;
+    border-radius: 50%;
+    color: black;
+    font-size: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 60px;
+}
+#addProductButton:hover{
+    background-color: antiquewhite;
+}
+#adminField_Store{
+    display: block;
+    height: 170px;
+    width: 170px;
+    text-align: center;
+
+}
+.StoreEditButton,
+.StoreApplyButton,
+.StoreCancelButton,
+.StoreDeleteButton{
+    border: none;
+    outline: none;
+    position: relative;
+}
+.StoreEditButton {
+    width: 15px;
+    height: 17px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background: url(http://jeorgius/icons/edit.png) no-repeat;
+
+}
+.StoreCancelButton {
+    width: 15px;
+    height: 17px;
+    background: url(http://jeorgius/icons/cancel.png) no-repeat;
+    display: none;
+}
+.StoreApplyButton {
+    width: 15px;
+    height: 17px;
+    background: url(http://jeorgius/icons/apply.png) no-repeat;
+    display: none;
+}
+.StoreDeleteButton {
+    right: 0;
+    height: 17px;
+    color: #FF7777;
+    background: #000;
+    display:none;
+    position: absolute;
+
+}
+

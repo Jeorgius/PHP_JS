@@ -1,0 +1,238 @@
+body {
+    background-color: #000;
+    color: whitesmoke;
+    font-family: Calibri, Arial sans-serif;
+    font-size: 10pt;
+}
+ul, ul li {
+    list-style: none;
+    padding:0;
+}
+h2 {
+    font-family: Georgia, Times, serif;
+    font-weight: bold;
+    font-size: 24pt;
+    margin: 35px 0;
+}
+.header {
+    margin: 0 10px;
+    padding-left: 30px;
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+a:visited {
+    color: whitesmoke;
+    outline: none;
+}
+a:link {
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+leftbar, content, rightbar, leftbar li, .header, login {
+    /*border: 1px solid white;*/
+}
+
+.whole {
+    width:100%;
+    display: grid;
+    grid-template-columns: 160px auto;
+    grid-gap: 10px;
+    box-sizing: border-box;
+    padding: 10px; /* edges of grid*/
+}
+leftbar, content, rightbar {}
+
+/*                                  LEFTBAR*/
+leftbar {
+    grid-column: 1;
+}
+leftbar ul {
+    padding-left: 30px;
+}
+leftbar li {
+    font-size: 24px;
+    font-weight: bolder;
+    /*margin-top: 5px;*/
+    cursor: pointer;
+}
+
+leftbar li:hover {
+    background: rgba(255, 255 ,255, 0.3);
+}
+
+login {
+    width: 160px;
+    margin: 0 0 0 0;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0);
+    text-align: center;
+    position:absolute;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+login .Login_forms {
+    width: 60%;
+    color:whitesmoke;
+    /*margin: 0 10px 5px 5px;*/
+    background: transparent;
+    border-color: whitesmoke;
+    border-radius: 5px;
+    padding-left: inherit;
+    margin-top: 5px;
+}
+login #register{
+    text-align: left;
+}
+.Login_forms#LoginButton {
+    cursor: pointer
+}
+
+#MyProfile {
+    cursor: pointer;
+}
+#MyProfile:hover {
+    box-shadow: 0 1px 0 white;
+}
+
+/*                                  CONTENT*/
+content {
+    grid-column: 2;
+    padding-left: 60px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+content input {
+    background: rgba(0,0,0,0);
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    color: antiquewhite;
+}
+rightbar {
+    grid-column: 2;
+    display: block;
+    width: 160px;
+    min-height: 230px;
+    right: 30px;
+}
+
+/*                                  BLOCKS */
+/*news, news img, news newsTextBox {border: 1px solid whitesmoke}*/
+news {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-height: 300px;
+    padding: 10px;
+    grid-gap: 5px;
+    background: antiquewhite;
+    color: black;
+    position: relative;
+    margin-bottom: 10px;
+}
+news newsTextBox {
+    grid-column: 1;
+}
+news img {
+    grid-column: 2;
+    width:160px;
+}
+news newsTitle {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+/*                                  PHOTOS */
+photo {
+    width: 170px;
+    height: 170px;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    /*border: 1px solid whitesmoke;*/
+}
+photo:hover {
+    box-shadow: 0 2px 0 antiquewhite inset,
+    0 2px 0 antiquewhite;
+}
+photo img {
+    max-width: 160px;
+    max-height: 160px;
+}
+
+/*                                  USERS */
+user {
+    width: 120px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+    /*transition-property: box-shadow;*/
+    box-shadow: none;
+}
+user:hover {
+    box-shadow: 0 2px 0 antiquewhite inset,
+    0 2px 0 antiquewhite;
+    /*border-top: 2px solid antiquewhite;
+    border-bottom: 2px solid antiquewhite;*/
+}
+user img {
+    margin-top: 10px;
+    max-width: 100px;
+    max-height: 80px;
+}
+user nickname, user name, user surname {
+    display: block;
+}
+
+
+@media screen and (max-width: 815px) {
+    content {
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width: 640px) {
+    content {
+        grid-template-columns: auto;
+    }
+}
+
+/*                      STORE */
+prodItem {
+    width: 120px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+    box-shadow: none;
+    position: relative;
+}
+prodItem:hover {
+    box-shadow: 0 2px 0 antiquewhite inset,
+    0 2px 0 antiquewhite;
+}
+prodItem img {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
+    max-height: 80px;
+}
+prodItem price {
+    font-weight: bolder;
+    color: #77FF77;
+}
+prodItem hotsale {
+    color: red;
+    font-weight: bolder;
+    display: none;
+}
+prodItem pTitle, prodItem pn, prodItem price, prodItem img, prodItem hotsale {
+    display: block;
+}

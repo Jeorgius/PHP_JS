@@ -1,0 +1,32 @@
+<createProd>
+    <createProdL>
+        <div class="productHero">
+            <form method="POST">
+                <input id="productTitle" name="productTitle" type="text" value="Standard Title">
+            </form>
+            <div id="productGalleryAdd">
+                <form id="productGalleryForm">
+                    <p>Load Images</p>
+                    <input type="file" id="productGalleryInput" multiple accept="image/*"
+                           onchange="IterateFiles(this.files)">
+                    <label class="applyButton" for="productGalleryInput">Choose images</label>
+                </form>
+                <progress id="ProgressBar" max="100" value="0"></progress>
+                <div id="productGallerySmall"></div>
+            </div>
+        </div>
+        <div id="empty"></div>
+    </createProdL>
+    <createProdR>
+        <form method="POST" id="Internal">
+            <input name="sku" type="text" id="sku" placeholder="SKU ID" /><br/>
+            <input id="vendor" name="vendor" type="text" placeholder="Vendor" />
+            <input id="productPN" name="productPN" type="text" placeholder="PN"><br />
+            <input id="popularity" name="popularity" type="text" placeholder="Popularity (0 - min)" />
+
+            <br/><br/>
+            <input id="category" name="category" type="text" placeholder="Category" />
+            <input id="price" name="price" type="text" placeholder="Price" />
+        </form>
+    </createProdR>
+</createProd>

@@ -1,0 +1,320 @@
+createProd {
+    display: grid;
+    grid-template-columns: auto 165px;
+    grid-gap: 5px;
+}
+createProdL {
+    grid-column: 1;
+    display: block;
+}
+createProdR{
+    display: block;
+    width: 165px;
+    grid-column: 2;
+}
+
+.applyButton,
+.cancelButton,
+#saveAllButton,
+.addFeatureSmallIcons {
+    border-radius: 5px;
+}
+.fixedBottom {
+    position: fixed;
+    z-index: 201;
+    height: 50px;
+    background: black;
+    border-top-color: #77FF77;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.fixedBottom div#saveAllButton {
+    padding: 5px 50px 5px;
+    background-color: #77FF77;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+}
+.fixedBottom div#saveAllButton:hover {
+    background-color: green;
+}
+
+
+
+#addFeaturePanel {
+    padding: 10px;
+}
+#addFeatureLeftButton {
+    background: url("http://mysite/admin/fleft.png") no-repeat;
+    width:131px;
+}
+#addFeatureRightButton {
+    background: url("http://mysite/admin/fright.png") no-repeat;
+    width:131px;
+}
+#addFeatureMediaButton {
+    background: url("http://mysite/admin/pic.png") no-repeat;
+}
+#addFeatureTextButton {
+    background: url("http://mysite/admin/txt.png") no-repeat;
+}
+#addFeatureLeftButton, #addFeatureRightButton, #addFeatureMediaButton, #addFeatureTextButton {
+    display: inline-block;
+    height: 70px;
+    min-width: 71px;
+}
+
+#addFeatureLeftButton:hover, #addFeatureRightButton:hover,
+#addFeatureMediaButton:hover, #addFeatureTextButton:hover {
+    border: solid 1px yellow;
+    border-radius: 5px;
+}
+
+.applyButton {
+    background: #77FF77;
+}
+.cancelButton {
+    background: #FF7777;
+}
+.saveAllButton {
+    background: #FFF777;
+    width: 500px;
+}
+
+.addFeatureSmallIcon {
+    display: inline-block;
+    height: 70px;
+
+}
+
+#empty {
+    height: 30px;
+}
+
+/*      HERO                */
+
+.productHero {
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+    text-align: center;
+    border: 3px #FFF777 dashed;
+    padding: 5px;
+}
+.productHero form {
+    grid-column: 2;
+}
+input#productTitle {
+    width: 90%;
+}
+
+input#productTitle, input#productPN, input#sku, input#popularity, input#category,
+input#price, input#vendor {
+    border: solid 1px whitesmoke;
+    border-radius: 5px;
+    background: rgba(0,0,0,0);
+    color: whitesmoke;
+    position: relative;
+    display: block;
+    margin: 5px 0;
+    width: 165px;
+}
+
+
+#productGalleryAdd {
+    padding: 10px;
+    border: initial;
+    border: solid 1px red;
+    display:block;
+    grid-column: 2;
+    grid-row: 2;
+}
+#productGalleryAdd.highlight {
+    border: solid 2px yellow;
+}
+form#productGalleryForm {
+    padding: 10px;
+}
+#productGalleryInput {
+    padding: 10px;
+    display: none;
+}
+#productGalleryInput.highlight {
+    border-color: yellow;
+}
+
+#ProgressBar {
+    background-color: #F3F3F3;
+    border: 0;
+    height: 18px;
+    border-radius: 9px;
+    grid-column: 2;
+}
+
+input#productGalleryPicsInput {
+
+}
+
+#productGallerySmall {
+    padding: 10px;
+}
+#productGallerySmall img {
+    max-width: 100px;
+    max-height: 100px;
+    padding: 5px;
+}
+
+#productGalleryLeftArrow {
+
+}
+
+#productGalleryRightArrow {
+
+}
+
+input#productMainText {
+
+}
+
+/*      FEATURES TAGS       */
+fLeft, fRight, fMedia, fText {
+    display: grid;
+    height: 300px;
+    text-align: center;
+    border: 3px #FFF777 dashed;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+fLeft, fRight {
+    grid-template-columns: 1fr 45% 45% 1fr;
+    grid-template-rows: 1fr 10% 70% 10% 1fr;
+}
+fMedia, fText {
+    grid-template-columns: 1fr 90% 1fr;
+    grid-template-rows: 1fr 10% 70% 10% 1fr;
+}
+
+
+fLeft textarea.Text, fLeft input.Title,
+fRight textarea.Text, fRight input.Title,
+fMedia input.Title,
+fText textarea.Text, fText input.Title {
+    text-align: start;
+    border: solid 1px whitesmoke;
+    border-radius: 5px;
+    background: rgba(0,0,0,0);
+    color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+fLeft .Image, fRight .Image, fMedia .Image {
+    background: no-repeat;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+/*      FEATURE-LEFT       */
+fLeft {}
+fLeft.productFeature {}
+fLeft .Image {
+    grid-column: 2;
+    grid-row: 2/4;
+}
+fLeft input.Title {
+    grid-row: 2;
+}
+fLeft textarea.Text{
+    grid-row: 3;
+}
+fLeft textarea.Text, fLeft input.Title {
+    grid-column: 3;
+}
+fLeft controls {
+    grid-row: 4;
+    grid-column: 2/4;
+
+}
+
+/*     FEAT-RIGHT       */
+
+fRight {}
+fRight.productFeature {}
+fRight .Image {
+    grid-column: 3;
+    grid-row: 2/4;
+}
+fRight input.Title {
+    width: 100%;
+    margin-bottom: 5px;
+    grid-row: 2;
+}
+fRight textarea.Text{
+    grid-row: 3;
+}
+fRight textarea.Text, fRight input.Title {
+    grid-column: 2;
+}
+fRight controls {
+    grid-row: 4;
+    grid-column: 2/4;
+}
+
+/*        MEDIA         */
+
+fMedia {
+    grid-template-columns: 1fr 90% 1fr;
+    grid-template-rows: 1fr 10% 70% 10% 1fr;
+}
+fMedia.productFeature {}
+fMedia .Image {
+    grid-column: 2;
+    grid-row: 3;
+    height: 100%;
+}
+fMedia input.Title {
+    grid-column: 2;
+    grid-row: 2;
+}
+fMedia controls {
+    grid-row: 4;
+    grid-column: 2;
+}
+
+/*        TEXT-ONLY      */
+
+fText {}
+fText input.Title {
+    grid-row: 2;
+}
+fText textarea.Text{
+    grid-row: 3;
+}
+fText textarea.Text, fText input.Title {
+    grid-column: 2;
+}
+fText controls {
+    grid-row: 4;
+    grid-column: 2;
+}
+
+/*        CONTROLS       */
+
+fLeft controls, fRight controls, fMedia controls, fText controls {
+    margin-top: 5px;
+    height: 40px;
+}
+controls delete {
+    border-radius: 5px;
+    width: 100%;
+    background-color: orangered;
+}
+controls:hover {
+    background-color: rgba(255, 0, 0, 0.3);
+}
